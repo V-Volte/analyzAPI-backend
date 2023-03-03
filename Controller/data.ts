@@ -81,15 +81,26 @@ export const submit = async (req: Request, res: Response) => {
 		let userData = await db
 			.collection<user>(collections.users)
 			.findOne({ _id: userId.id });
+			if (!userData) {
+				return res.status(401).json({
+					status: "unauthorized",
+					data: "Kindly check your username and password",
+				});
+			}
 		if (userData) {
 			let { answers } = req.body;
 
 			let result = await db
 				.collection('userSubmissionData')
-				.updateOne(
-					{ userID: new ObjectId(userId.id) },
-					{ $set: { answers: answers, finalSubmissionTime: new Date().getTime() } },
-					{ upsert: true }
+				.insertOne(
+					// { userID: new ObjectId(userId.id) },
+					// { $set: { answers: answers, finalSubmissionTime: new Date().getTime() } },
+					// { upsert: true }
+					{
+						userID: userData._id,
+						answers: answers,
+						submissionTime: new Date().getTime()
+					}
 					
 				);
 
