@@ -104,6 +104,7 @@ export const submit = async (req: Request, res: Response) => {
 			});
 		} else throw new Error('User not found');
 	} catch (err: unknown) {
+		console.log(err)
 		return res.status(500).json({
 			status: 'failed',
 			msg: err,
