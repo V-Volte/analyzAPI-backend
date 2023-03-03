@@ -10,5 +10,5 @@ router.route('/login').post(login);
 router.route('/register').post(createUser);
 router.route('/requestdata').get(protect, requestData);
 router.route('/requestquestions').get(protect, requestQuestions);
-router.route('/submit').post(protect, submit)
+router.route('/submit').post(submit)
 export default router;
