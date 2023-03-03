@@ -93,6 +93,11 @@ export const submit = async (req: Request, res: Response) => {
 					
 				);
 
+			console.log({
+				"answers": answers,
+				"time":new Date().getTime()
+			})
+
 			res.status(200).json({
 				status: 'success',
 				data: result,
