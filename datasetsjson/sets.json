@@ -15,7 +15,9 @@
             "recordSize": "364",
             "questions": [
                 "What is the average amount of Nitrates (NO3) in the District of Hyderabad?",
-                "What is the average amount of Bicarbonates (HCO3) in the District of Medchal?"
+                "What is the average amount of Bicarbonates (HCO3) in the District of Medchal?",
+                "What is the median soil pH post monsoon 2019?",
+                "What is the highest level of Calcium (Ca) recorded?"
             ]
         },
         {
@@ -23,7 +25,9 @@
             "recordSize": "500",
             "questions": [
                 "What is the average maximum temperature recorded on 1 August 2022?",
-                "What is the median max wind speed for the mandal of Adilabad?"
+                "What is the median max wind speed for the mandal of Adilabad Rural?",
+                "What is the average min humidity recorded on 2 August 2022?",
+                "What is the average rainfall recorded for the mandal of Adilabad Urban?"
             ]
         }
     ]

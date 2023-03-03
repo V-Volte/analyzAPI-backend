@@ -80,7 +80,7 @@ export const submit = async (req: Request, res: Response) => {
 
 		let userData = await db
 			.collection<user>(collections.users)
-			.findOne({ _id: new ObjectId(userId.id) });
+			.findOne({ _id: userId.id });
 		if (userData) {
 			let { answers } = req.body;
 
