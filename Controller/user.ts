@@ -34,7 +34,7 @@ export const createUser = async (req: Request, res: Response) => {
         );
         res.status(200).json({
             status: "success",
-            data: userData,
+            data: {userID,password},
             token,
         });
     } catch (err: unknown) {
