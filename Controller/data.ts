@@ -87,7 +87,7 @@ export const submit = async (req: Request, res: Response) => {
 			let result = await db
 				.collection('userSubmission')
 				.updateOne(
-					{ _id: new ObjectId(userId.id) },
+					{ userID: new ObjectId(userId.id) },
 					{ $set: { answers: answers, finalSubmissionTime: new Date().getTime() } },
 					{ upsert: true }
 					
