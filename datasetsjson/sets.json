@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "name": "PreMonsoonWaterData",
+            "recordSize": "355",
+            "questions": [
+                "What is the average amount of Nitrates (NO3) in the District of Hyderabad?",
+                "What is the average amount of Bicarbonates (HCO3) in the District of Medchal?"
+            ]
+        },
+        {
+            "name": "PostMonsoonWaterData",
+            "recordSize": "364",
+            "questions": [
+                "What is the average amount of Nitrates (NO3) in the District of Hyderabad?",
+                "What is the average amount of Bicarbonates (HCO3) in the District of Medchal?"
+            ]
+        },
+        {
+            "name": "WeatherDataAugust2022",
+            "recordSize": "500",
+            "questions": [
+                "What is the average maximum temperature recorded on 1 August 2022?",
+                "What is the median max wind speed for the mandal of Adilabad?"
+            ]
+        }
+    ]
+}
