@@ -17,7 +17,7 @@ export const createUser = async (req: Request, res: Response) => {
         console.log(req.body);
         let userID = Math.floor(Math.random() * 100000) + 1;
         let password = uniqueNamesGenerator({
-            dictionaries: [adjectives, colors, animals],
+            dictionaries: [adjectives],
         });
         let userData = await db.collection<user>(collections.users).insertOne({
             ...req.body,
