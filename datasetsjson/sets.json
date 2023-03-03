@@ -5,7 +5,9 @@
             "recordSize": "355",
             "questions": [
                 "What is the average amount of Nitrates (NO3) in the District of Hyderabad?",
-                "What is the average amount of Bicarbonates (HCO3) in the District of Medchal?"
+                "What is the average amount of Bicarbonates (HCO3) in the District of Medchal?",
+                "What is the median soil pH pre-monsoon of 2022?",
+                "What is the highest level of Calcium (Ca) recorder pre-monsoon 2022?"
             ]
         },
         {
