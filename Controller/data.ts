@@ -85,7 +85,7 @@ export const submit = async (req: Request, res: Response) => {
 			let { answers } = req.body;
 
 			let result = await db
-				.collection('userSubmission')
+				.collection('userSubmissionData')
 				.updateOne(
 					{ userID: new ObjectId(userId.id) },
 					{ $set: { answers: answers, finalSubmissionTime: new Date().getTime() } },
